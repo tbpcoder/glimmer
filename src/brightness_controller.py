@@ -20,6 +20,9 @@ class BrightnessController:
             print(f"Error capturing screen: {e}")
             return None
 
+    def set_manual_brightness(self,target_brightness):
+        sbc.set_brightness(target_brightness)
+
     def calculate_target_brightness(self, avg_brightness):
         try:
             res = 1 - (avg_brightness * self.sensitivity / 2550)
