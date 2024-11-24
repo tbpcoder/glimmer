@@ -14,7 +14,7 @@ Glimmer is an automatic screen brightness controller for laptops that adjusts br
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/tbpcoder/glimmer_pyqt5_implementation.git
+    git clone https://github.com/tbpcoder/glimmer.git
     cd glimmer
     ```
 
