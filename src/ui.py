@@ -1,11 +1,17 @@
+import sys
+import os
+project_root = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(project_root))
+sys.path.insert(0, project_root)
 from PyQt5.QtWidgets import QHBoxLayout, QMainWindow, QWidget, QVBoxLayout, QDesktopWidget, QSystemTrayIcon, QMessageBox
 from PyQt5.QtCore import QTimer
-import sys
-from PyQt5.QtCore import Qt
-from controllers.brightness_controller import BrightnessController
-from components import TitleSection, ButtonSection, SliderSection, StatusSection
-from utils.window_manager import WindowManager
-from utils.styles import StyleManager
+from src.controllers.brightness_controller import BrightnessController
+from src.components.title import TitleSection
+from src.components.buttons import ButtonSection
+from src.components.sliders import SliderSection
+from src.components.status import StatusSection
+from src.utils.styles import StyleManager
+from src.utils.window_manager import WindowManager
 from utils.theme_file import load_themes, save_themes
 
 class UI(QMainWindow):

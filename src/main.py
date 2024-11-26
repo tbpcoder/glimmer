@@ -1,8 +1,12 @@
 import sys
+import os
 import traceback
 import logging
 from PyQt5.QtWidgets import QApplication
-from ui import UI
+project_root = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(project_root))
+sys.path.insert(0, project_root)
+from src.ui import UI
 
 logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s',

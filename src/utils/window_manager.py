@@ -15,7 +15,7 @@ class WindowManager:
         self.tray_icon = QSystemTrayIcon(self.main_window)
         
         # Use absolute path for the icon
-        icon_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "icon.png")
+        icon_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "icon.ico")
         self.tray_icon.setIcon(QIcon(icon_path))
 
         # Create tray menu
