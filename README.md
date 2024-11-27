@@ -37,7 +37,7 @@ Glimmer is an automatic screen brightness controller for laptops that adjusts br
 ## Configuration
 
 - **Sensitivity**: Adjust how responsive Glimmer is to changes in screen light.
-- **Theme Options**: Customize colors, slider design, and more for an aesthetically pleasing interface.
+- **Theme Options**: Customize indoor and outdoor themes.
 
 ## Contributing
 
